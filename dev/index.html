@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LICW Morse Practice Page</title>
     
-<link rel="icon" href="LongIslandCWClub-favicon-2.jpg"><script defer src="bundled319d4831a830dcb8542.js"></script><link href="bundle.618c1c2672d3071ffd11.css" rel="stylesheet"></head>
+<link rel="icon" href="LongIslandCWClub-favicon-2.jpg"><script defer src="bundlefe0422e85994667e94ac.js"></script><link href="bundle.618c1c2672d3071ffd11.css" rel="stylesheet"></head>
 <body>
     <div class="container-fluid" style="height:100vh; overflow-y:clip; " >
         <div class="row">
@@ -183,6 +183,20 @@
                                                 <div class="list-group" data-bind="foreach: displays, childrenComplete: setDisplaysInitialized" style="overflow-y:auto; height:250px;">
                                                     <button type="button" class="list-group-item list-group-item-action" data-bind="text: $data.display, click: ()=>$root.setDisplaySelected($data), css: { active: $data.display==$parent.selectedDisplay().display}"></button>
                                                 </div>
+                                            </div>
+
+                                            <div class="col">
+                                                <div class="btn-group-vertical" role="group" aria-label="Basic checkbox toggle button group">
+                                                    <input type="checkbox" class="btn-check"  autocomplete="off" id="btncheck1" data-bind="checked: randomizeLessons">
+                                                    <label class="btn btn-outline-primary" for="btncheck1">Randomize</label>
+                                                  <!--
+                                                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
+                                                  
+                                                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
+                                                  -->
+                                                  </div>
                                             </div>
                                         </div>   
                                     </div>
