@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LICW Morse Practice Page</title>
 
-<link rel="icon" href="LongIslandCWClub-favicon-2.jpg"><script defer src="bundle250f2b3d37b3d8c33849.js"></script><link href="bundle.618c1c2672d3071ffd11.css" rel="stylesheet"></head>
+<link rel="icon" href="LongIslandCWClub-favicon-2.jpg"><script defer src="bundle08ed38496bd93290755a.js"></script><link href="bundle.618c1c2672d3071ffd11.css" rel="stylesheet"></head>
 
 <body>
     <div class="container-fluid" style="height:100vh; overflow-y:auto; ">
@@ -277,6 +277,21 @@
                                                     <input type="number" class="form-control" style="max-width:75px;"
                                                         aria-label="Username" min="1"
                                                         data-bind="textInput: overrideMax, enable: ifOverrideMinMax">
+                                                </div>
+                                                <div class="btn-group-vertical" role="group"
+                                                    aria-label="Basic checkbox toggle button group">
+                                                    <!--sticky sets toggle-->
+                                                    <input type="checkbox" class="btn-check"
+                                                        id="btncheck2stickysetstoggle" autocomplete="off"
+                                                        data-bind="checked: ifStickySets">
+                                                    <label class="btn btn-outline-primary"
+                                                        for="btncheck2stickysetstoggle">Sticky Sets</label>
+                                                </div>
+                                                <div class="input-group">
+                                                    <!--sticky set text -->
+                                                    <input type="text" class="form-control" style="max-width:125px;"
+                                                        aria-label="Username" min="0"
+                                                        data-bind="textInput: stickySets, enable: ifStickySets">
                                                 </div>
                                                 <div class="btn-group-vertical" role="group"
                                                     aria-label="Basic checkbox toggle button group">
